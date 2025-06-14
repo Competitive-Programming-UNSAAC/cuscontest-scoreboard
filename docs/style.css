@@ -1,0 +1,139 @@
+body {
+  background: #f8fafc;
+  font-family: 'Segoe UI', 'Inter', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+header {
+  background: #0e7490;
+  padding: 2rem 0 1.2rem 0;
+  box-shadow: 0 2px 12px rgba(14,116,144,0.08);
+  width: 100vw;
+  left: 0;
+  position: relative;
+  margin-left: calc(-50vw + 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+header h1 {
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0;
+  left: 0;
+  right: 0;
+}
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url('img/imagen1.webp') no-repeat center center;
+  background-size: cover;
+  background-color: #fff;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+#background > * {
+  z-index: 1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul li {
+  margin-bottom: 1.2em;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  justify-content: center;
+}
+ul li:last-child {
+  margin-bottom: 0;
+}
+ul a {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 1.2em 2em;
+  background: linear-gradient(90deg, #0ea5e9 0%, #0e7490 100%);
+  color: #fff;
+  border: none;
+  border-radius: 1em;
+  font-weight: 700;
+  font-size: 1.35em;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(14,116,144,0.13);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  outline: none;
+}
+ul a:hover, ul a:focus {
+  background: linear-gradient(90deg, #0e7490 0%, #0ea5e9 100%);
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(14,116,144,0.22);
+  transform: translateY(-2px) scale(1.04);
+}
+@media (max-width: 56.25em) {
+  #background {
+    padding: 0;
+  }
+  header h1 {
+    font-size: 2.1rem;
+  }
+  ul a {
+    font-size: 1.1em;
+    padding: 1em 1em;
+    max-width: 95vw;
+  }
+}
+@media (max-width: 37.5em) {
+  #background {
+    padding: 0;
+  }
+  header {
+    padding: 4% 0 3% 0;
+  }
+  header h1 {
+    font-size: 2.2rem;
+    padding: 4% 2%;
+  }
+  ul {
+    margin: 6% 0 0 0;
+  }
+  ul li, ul a {
+    max-width: 420px;
+    min-width: 220px;
+  }
+  ul a {
+    font-size: 1em;
+    padding: 4% 2%;
+    border-radius: 0.7em;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+footer {
+  text-align: center;
+  color: #7b8794;
+  font-size: 0.95em;
+  margin: 2.5rem 0 1.2rem 0;
+}

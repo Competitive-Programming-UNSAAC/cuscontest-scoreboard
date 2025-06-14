@@ -1,8 +1,8 @@
 const images = [
-    './img/imagen1.jpg',
-    './img/imagen2.jpg',
-    './img/imagen3.jpg',
-    './img/imagen4.jpg'
+    './img/imagen1.webp',
+    './img/imagen2.webp',
+    './img/imagen3.webp',
+    './img/imagen4.webp'
 ];
 let currentindex = 0;
 
