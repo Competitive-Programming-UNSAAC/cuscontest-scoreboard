@@ -1,0 +1,2 @@
+# cuscontest-scoreboard
+Cuscontest Scoreboard
